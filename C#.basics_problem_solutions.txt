@@ -1,0 +1,110 @@
+using System;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Console.WriteLine("Hello World!");
+
+            //Pb:1 Given 2 ints, a and b, print true if one of them is 10 or if their sum is 10.
+            /*Soln:
+            int x = 7;
+            int y = 3;
+
+            if (x==10||y==10||x+y==10)          
+                Console.WriteLine("true");
+            else {
+                Console.WriteLine("false");
+            }
+              */
+
+            //Pb2: Given 2 arrays of ints, a and b, print true if they have the same first element or they have the same last element. given that int[] arr = { 1, 4, 7 };    int[] arr2 = { 3, 4 };
+            /*Soln
+            int[] arr = { 1, 4, 7 };
+            int[] arr2 = { 3, 4 };
+            if (arr[0] == arr2[0] || arr[2] == arr2[1])
+            {
+                Console.WriteLine("true");
+            }
+            else
+            {
+                Console.WriteLine("false");
+            }  
+             */
+
+            //pb3: Given an array of student’s grads, print the percentage of succeeded students. Note that if a student has a grade more than 50 then he considered succeeded. given that: arr = { 20, 40, 50, 10, 60, 100, 80, 20, 10, 80 };
+            //Soln
+           /* int[] arr = { 20, 40, 50, 10, 60, 25, 80, 15, 10, 80 };
+            int x = arr.Length; //10
+            Console.WriteLine(x);
+            
+            int counter=0;
+            foreach (int i in arr) 
+            {           
+                if (i >= 50) 
+                {
+                    counter++;
+                }
+                else
+                {
+                    continue;
+                }                        
+            }
+            double res = (1.0 * counter / x) * 100;
+            Console.WriteLine(res + "%");*/ 
+
+            /*pb4:Write a code that print this shape.
+            ******
+            *****
+            ****
+            ***
+            **
+            *  */
+            /*Soln:
+            for(int i=6;i>0; i--)
+            {
+                for (int j=0;j<i;j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+            */
+            //pb5: Given a string of brackets print true if this brackets are balanced and false otherwise {}{}
+            //Soln:
+            /*string str = "{}}}{{{}";
+            int counter = 0;
+            for (int i=0;i<str.Length;i++)
+            {              
+                
+                if (str[i]== '{') 
+                {
+                    counter++;
+                    
+                }
+                else if (str[i] == '}')
+                {                
+                    counter--;
+                    if (counter == -1)
+                    {
+                        
+                        break;
+                    }
+                }
+
+           
+
+            }
+            if (counter == 0)
+            {
+                Console.WriteLine("balanced");
+            }
+            else
+            {
+                Console.WriteLine("not balanced");
+            }*/
+        }
+    }
+}
